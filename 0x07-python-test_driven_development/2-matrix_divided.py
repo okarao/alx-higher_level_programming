@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # 2-matrix_divided.py
 ''' Define a function matrix_divded that returns a new matrix'''
+
+
 def matrix_divided(matrix, div):
     '''Checks if matrix is a list of list of integers or float
     raise a TypeError

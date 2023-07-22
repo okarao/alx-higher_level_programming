@@ -15,3 +15,7 @@ matrix_divided function examples
 >>> matrix_divided(matrix, divisor)
 [[0.8, 1.67, 2.53], [2.73, 3.8, 4.2]]
 
+>>> matrix_divided(matrix, divisor)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
