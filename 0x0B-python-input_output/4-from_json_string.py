@@ -13,5 +13,4 @@ def from_json_string(my_str):
     Returns:
         String Object
     """
-    str_obj = json.load(my_str)
-    return(str_obj)
+    return json.loads(my_str)
