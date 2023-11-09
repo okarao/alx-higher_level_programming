@@ -14,4 +14,4 @@ def save_to_json_file(my_obj, filename):
         filemane: The containing the JSON representation of the object
     """
     with open(filename, 'w', encoding='utf-8') as my_file:
-        json.dumps(my_obj, my_file)
+        json.dump(my_obj, my_file)
