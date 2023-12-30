@@ -4,4 +4,4 @@
 -- If the user user_0d_1 already exists, your script should not fail
 
 CREATE USER 'user_0d_1'@'localhost' IF NOT EXISTS IDENTIFIED WITH mysql_native_password BY 'user_0d_1_pwd';
-GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'sser_0d_1'@'localhost' WITH GRANT OPTION;
