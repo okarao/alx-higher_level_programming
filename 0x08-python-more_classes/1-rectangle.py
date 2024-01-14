@@ -3,9 +3,9 @@
     from 0-rectangle
 
 '''
-class Rectangle:
 
-    
+
+class Rectangle:
     """At this stage the class only creates private instance attributes by
     taking in two arguments.
 
