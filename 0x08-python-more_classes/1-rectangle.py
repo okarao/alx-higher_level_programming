@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-'''This Module defines a class Rectangle which inherits 
-
+'''This Module defines a class Rectangle which inherits
     from 0-rectangle
 
 '''
 class Rectangle:
+
+    
     """At this stage the class only creates private instance attributes by
     taking in two arguments.
 
