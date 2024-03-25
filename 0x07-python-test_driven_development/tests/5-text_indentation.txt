@@ -1,0 +1,45 @@
+>>> import sys
+>>> sys.path.append('.')
+>>> from text_indentation import text_indentation
+
+# Test case 1: Basic test with one sentence
+>>> text_indentation("This is a test.")
+This is a test.
+
+# Test case 2: Text with multiple sentences and punctuation
+>>> text_indentation("Hello! How are you doing? I'm fine, thank you.")
+Hello!
+How are you doing?
+
+I'm fine, thank you.
+
+# Test case 3: Text with colons
+>>> text_indentation("Python: a programming language.")
+Python:
+a programming language.
+
+# Test case 4: Empty input text
+>>> text_indentation("")
+# (no output, as there's no text to print)
+
+# Test case 5: Text with leading and trailing spaces
+>>> text_indentation("   This is a test.   ")
+This is a test.
+
+# Test case 6: Text with mixed punctuation
+>>> text_indentation("Hello, world! How's everything going? Python: the best language!")
+Hello, world!
+How's everything going?
+
+Python:
+the best language!
+
+# Test case 7: Test with long text
+>>> long_text = "This is a long sentence. It's used to test the function with a longer input text. The function should correctly handle multiple sentences and various punctuation marks, including periods, question marks, and colons. Let's see if it works!"
+>>> text_indentation(long_text)
+This is a long sentence.
+It's used to test the function with a longer input text.
+
+The function should correctly handle multiple sentences and various punctuation marks, including periods, question marks, and colons.
+
+Let's see if it works!
