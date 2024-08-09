@@ -13,7 +13,7 @@ class Rectangle:
 
     """
     def __init__(self, width=0, height=0):
-        # use setters to assign 
+        # use setters to assign
         self.width = width
         self.height = height
 
@@ -31,7 +31,7 @@ class Rectangle:
     def width(self, value):
         """Args:
             value (int): horizontal dimension of rectangle
-        
+
         Attribute:
             __width (int): horizontal dimension of rectangle
         Raises:
@@ -39,7 +39,7 @@ class Rectangle:
             ValueError: if `value` is less than 0
 
         """
-        if type (value) is not int:
+        if type(value) is not int:
             raise TypeError('width must be an integer')
         elif value < 0:
             raise ValueError('width must be >= 0')
@@ -73,10 +73,10 @@ class Rectangle:
         elif value < 0:
             raise ValueError('Height must be greater or equal to 0')
         self.__height = value
-    
+
     def area(self):
         """Calculate the area of a rectangle
-        
+
         Returns:
             The area of a rectangle
 
