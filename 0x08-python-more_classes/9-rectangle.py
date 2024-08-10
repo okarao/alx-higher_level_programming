@@ -151,6 +151,7 @@ class Rectangle:
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
+    @classmethod
     def square(cls, size=0):
         """Args:
             size (int): dimensions of the square
