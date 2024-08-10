@@ -114,7 +114,7 @@ class Rectangle:
 
         total = ""
         for i in range(self.__height):
-            total += Rectangle.print_symbol * self.__width
+            total += str(self.print_symbol) * self.__width
             if i < self.__height - 1:
                 total += "\n"
 
