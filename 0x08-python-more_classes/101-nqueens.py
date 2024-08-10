@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-"""Solves the N queens problem using backtracking
-ensure that N non-attacking queens are placed on a nxn chessboard.
-
-"""
 import sys
 
 def backtrack(board, row, col):
