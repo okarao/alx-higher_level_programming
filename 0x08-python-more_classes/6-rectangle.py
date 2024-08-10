@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Defines a class Rectangle based on 4-rectangle.py
+'''Defines a class Rectangle based on 5-rectangle.py
 
 '''
 
