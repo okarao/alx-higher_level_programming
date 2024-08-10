@@ -2,6 +2,8 @@
 '''Defines a class Rectangle based on 2-rectangle.py
 
 '''
+
+
 class Rectangle:
     """Create private instance attributes taking two arquments
 
@@ -10,7 +12,7 @@ class Rectangle:
         height (int): the vertical dimension of the rectangle, default value 0
 
     """
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         # initialization
         self.width = width
         self.height = height
@@ -47,7 +49,7 @@ class Rectangle:
     @property
     def height(self):
         """__height getter.
-        
+
         Returns:
             __height (int): vertical dimension of rectangle
 
@@ -98,7 +100,7 @@ class Rectangle:
 
     def __str__(self):
         """Return a string representation of the rectangle using #
-        
+
         Returns:
             String rep of rectangle using # or empty string
 
@@ -106,4 +108,5 @@ class Rectangle:
         if self.width == 0 or self.__height == 0:
             return ""
         else:
-            return "\n".join(["#" * self.__width for _ in range(self.__height)])
+            return "\n".join(["#" * self.__width \
+                    for _ in range(self.__height)])
