@@ -107,6 +107,11 @@ class Rectangle:
         """
         if self.width == 0 or self.__height == 0:
             return ""
-        else:
-            return "\n".join(["#" * self.__width \
-                    for _ in range(self.__height)])
+        
+        total = ""
+        for i in range(self.__height):
+            total += "#" * self.__width
+            if i < self.__height - 1:
+                total += "\n"
+        
+        return total
