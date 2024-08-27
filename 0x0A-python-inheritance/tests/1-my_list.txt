@@ -1,0 +1,15 @@
+1-my_list.txt
+::Basic Lists
+>> my_list = MyList([3, 1, 2, 4])
+>> my_list.print_sorted()
+[1, 2, 3, 4]
+
+:: List with Duplicate numbers
+>> my_list = MyList([3, 3, 2, 1, 4, 1])
+>> my_list.print_sorted()
+[1, 1, 2, 3, 3, 4]
+
+:: Empty List
+>> my_list = MyList([])
+>> my_list.print_sorted()
+[]
