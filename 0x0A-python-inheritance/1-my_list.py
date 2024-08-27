@@ -9,6 +9,7 @@ class MyList(list):
     Class MyList that inherits from list
 
     """
+    pass
 
     def print_sorted(self):
         """
@@ -17,4 +18,4 @@ class MyList(list):
         Assumes that all the elements of the list will be of type int
         
         """
-        print(sorted(self))
+        print(sorted(list(self)))
