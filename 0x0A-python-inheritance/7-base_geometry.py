@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''Create a class BaseGeometry based on 6-base_geometry'''
+'''
+Create a class BaseGeometry based on 6-base_geometry
+'''
 
 
 class BaseGeometry:
