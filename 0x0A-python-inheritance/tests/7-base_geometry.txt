@@ -1,0 +1,23 @@
+7-base_geometry test file
+Test cases for function integer_validator
+
+>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>> bg = BaseGeometry()
+
+#Test with positive integer
+>> bg.integer_validator("number", 12)
+
+#Test with negative integer
+>> bg.integer_validator("number", -12)
+Traceback (most recent call last):
+ValueError: number be greater than 0
+
+#Test with three argumnets
+>> bg.integer_validator("number", 2, 3)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arquments but  were given
+
+#Test with infinite integer
+>> bg.integer_validator("number", int('inf'))
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'inf'
