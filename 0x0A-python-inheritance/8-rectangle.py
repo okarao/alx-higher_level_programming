@@ -4,7 +4,19 @@ Write class Rectagle that imports for BaseGeometry
 '''
 
 
-from 7-base_geometry import BaseGeometry
+class BaseGeometry:
+    """Base class BaseGeometry"""
+
+    def area(self):
+        """public instance method"""
+        raise Exception("area() is not implemented")
+
+    def integer_validation(self, name, value):
+        """Validate value as a positive integer"""
+        if not isinstance(value, int):
+            raise TypeError(name + " must be an integer")
+        if value <= 0:
+            raise ValueError(name + " must be greater than 0")
 
 
 class Rectangle(BaseGeometry):
