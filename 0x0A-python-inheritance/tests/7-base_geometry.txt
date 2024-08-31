@@ -12,10 +12,20 @@ Test cases for function integer_validator
 Traceback (most recent call last):
 ValueError: number must be greater than 0
 
-#Test with three argumnets
+# Test Case 1: Too Many Arguments
 >>> bg.integer_validator("number", 2, 3)
 Traceback (most recent call last):
 TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
+
+# Test Case 2: Missing One Argument
+>>> bg.integer_validator("my_int")
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+# Test Case 3: Missing All Arguments
+>>> bg.integer_validator()
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 #Test with infinite integer
 >>> bg.integer_validator("number", int('inf'))
@@ -39,14 +49,6 @@ ValueError: my_int must be greater than 0
 >>> bg.integer_validator("list", [0, 1, 2])
 Traceback (most recent call last):
 TypeError: list must be an integer
-
->>> bg.integer_validator("my_int")
-Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
-
->>> bg.integer_validator()
-Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 >>> bg.integer_validator("my_int", {2, 1})
 Traceback (most recent call last):
